@@ -1,3 +1,4 @@
+window.location.replace('#about');
 inviteButton = document.getElementById('dealerInvite')
 
 inviteButton.addEventListener('click', () => {
