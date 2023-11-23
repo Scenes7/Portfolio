@@ -42,7 +42,17 @@ body {
 #pic {
     padding: 2%;
     background-color: wheat;
-    width: 150%;
+    width: 100%;
+    border-radius: 5%;
+    
+}
+
+#myself {
+    font-size: 50%;
+    height: 100%;
+    width: 400px;
+    height:400px;
+    line-height: 100%; 
 }
 
 .projects {
@@ -103,13 +113,16 @@ body {
 
 .handles {
     background-color: rgb(246, 240, 241);
-    padding-top: 5%;
+    padding-top: 2%;
     display: flex;
+    padding-bottom: 3%;
 }
 
 .handle {
     text-decoration: none;
     margin-bottom: 5%;
+    align-items: center;
+
 }
 
 .logo {
@@ -117,4 +130,18 @@ body {
     width: 100px;
     margin-left: 80px;    
     margin-right: 70px;    
+}
+
+.logoDescription {
+    opacity: 0;
+    color: 	rgb(0, 150, 255);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.showElement {
+    visibility: visible;
+    transition: 300ms;
+    transition: opacity 0.3s ease;
+    opacity: 1;
 }
