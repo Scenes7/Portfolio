@@ -7,16 +7,15 @@ githubName = document.getElementById('logoDescription1')
 linkedinName = document.getElementById('logoDescription2')
 emailName = document.getElementById('logoDescription3')
 
-inviteButton.addEventListener('click', () => {
-    window.open("https://discord.com/oauth2/authorize?client_id=866733937115922443&permissions=0&scope=bot", "_blank")
-})
+// inviteButton.addEventListener('click', () => {
+//     window.open("https://discord.com/oauth2/authorize?client_id=866733937115922443&permissions=0&scope=bot", "_blank")
+// })
 
 githubLogo.addEventListener('mouseover', () => {
     githubName.classList.add("showElement")
 })
 githubLogo.addEventListener('mouseout', () => {
     githubName.classList.remove("showElement")
-    console.log("GG")
 })
 
 linkedinLogo.addEventListener('mouseover', () => {
@@ -24,7 +23,6 @@ linkedinLogo.addEventListener('mouseover', () => {
 })
 linkedinLogo.addEventListener('mouseout', () => {
     linkedinName.classList.remove("showElement")
-    console.log("GG")
 })
 
 emailLogo.addEventListener('mouseover', () => {
@@ -32,6 +30,5 @@ emailLogo.addEventListener('mouseover', () => {
 })
 emailLogo.addEventListener('mouseout', () => {
     emailName.classList.remove("showElement")
-    console.log("GG")
 })
 
