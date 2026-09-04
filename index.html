@@ -1,72 +1,54 @@
 <!DOCTYPE html>
-<html>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hire a Darius 1 trick</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <title>Scenes7</title>
 </head>
 
 <body>
-    <div id="navBar">
-        <a href="#about" class="navLink">About</a>
-        <a href="#projects" class="navLink">Projects</a>
-        <a href="#contact" class="navLink">Info</a>
-    </div>
-    <div class="bio" id="about">
-        <div id="about">
-            <h1>
-                I'm Sean Huang,
-            </h1>
-            an aspiring Software Engineer. I'm in my first year, studying Computing Science at the University of Alberta. I'm usually occupied with school work, but in the free time I have, I like to play the piano, participate in programming contests, watch anime, and play video games such as League of Legends. Below this bio, you will find a few of my projects and some of my handles.
-        </div>
-        <!-- <div id="pic">
-            <img src="images/me.png" alt="Sean Huang" id="myself">
-        </div> -->
-    </div>
-    <div class="projects" id="projects">
-        <a class="project" href="https://github.com/Scenes7/Toronto-Jobs-Web-Scraper" target="_blank">
-            <h3>Toronto Jobs Web Scraper</h3>
-            <img src="images/exampleOutput.png" alt="web scraper output" class="projectPic">
-            Extracts job information such as job description, location, and salary from the City of Toronto Jobs website.
-        </a>
-        <a class="project" href="https://github.com/GOATMaxwellN/Nightmares" target="_blank">
-            <h3>"Nightmares" Horror Game</h3>
-            <img src="images/exampleOutputNightmare.png" alt="game preview" class="projectPic">
-            A survival-horror 3d shooter game that adapts depending on the player's heartrate, which is measured using the BioAmp EXG Pill. Team project for natHACKS 2023.
-        </a>
-        <a class="project" href="https://github.com/Scenes7/Dealer-Discord-Bot" target="_blank">
-            <h3>"Dealer" Discord Bot</h3>
-            <img src="images/exampleOutputDealer.png" alt="poker game" class="projectPic">
-            A discord bot for clasic casino games such as Poker and Blackjack.
-            <br/>
-            <!-- <button id="dealerInvite">
-              Invite
-            </button> -->
-        </a>
-    </div>
-    <div class="handles" id="contact">
-        <div>
-            <p id="logoDescription1" class="logoDescription">Scenes7</p>
-            <a href="https://github.com/Scenes7" rel="nofollow" target="_blank" class="handle" id="logo1">
-                <img src="images/github-icon.png" alt="github" class="logo">
-            </a>
-        </div>
-        <div>
-            <p id="logoDescription2" class="logoDescription">seanhuang1</p>
-            <a href="https://www.linkedin.com/in/seanhuang1/" rel="nofollow" target="_blank" class="handle" id="logo2">
-                <img src="images/linkedin-icon.png" alt="linkedin" class="logo">
-            </a>
-        </div>
-        <div>
-            <p id="logoDescription3" class="logoDescription">seanhuang2005@gmail.com</p>
-            <a href="mailto:seanhuang2005@gmail.com" rel="nofollow" target="_blank" class="handle" id="logo3">
-                <img src="images/email-icon.png" alt="email" class="logo">
-            </a>
-        </div>
-    </div>
+  <svg width="0" height="0" style="position:absolute; width:0; height:0; overflow:hidden;">
+    <filter id="recolor-pico13">
+      <feColorMatrix type="matrix" values="0 0 0 0 0.5137  0 0 0 0 0.4627  0 0 0 0 0.6118  0 0 0 1 0" />
+    </filter>
+  </svg>
 
-    <script src="scripts.js"></script>
+  <header class="header">
+    <button id="home-btn" class="nav-btn active">HOME</button>
+    <button id="resume-btn" class="nav-btn">RESUME</button>
+  </header>
+
+  <main id="home-view" class="main-content">
+    <img src="images/peak_exchange.jpg" alt="hire me :) " class="profile-img">
+    <div class="bio">
+      <p class="line-1">Hi, I'm <span class="highlight">Sean</span>.</p>
+      <br />
+      <p class="line-2">University of Alberta Computer Science, graduating April 2028.</p>
+    </div>
+    <footer class="social-container">
+      <a href="https://github.com/Scenes7" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">
+        <img src="images/github-icon.png" alt="GitHub" class="social-icon">
+      </a>
+      <a href="https://www.linkedin.com/in/seanhuang1/" target="_blank" rel="noopener noreferrer" class="social-link"
+        title="LinkedIn">
+        <img src="images/linkedin-icon.png" alt="LinkedIn" class="social-icon">
+      </a>
+      <a href="mailto:siquan1@ualberta.ca" class="social-link" title="Email">
+        <img src="images/email-icon.png" alt="Email" class="social-icon">
+      </a>
+    </footer>
+  </main>
+
+  <section id="resume-view" class="resume-container hidden">
+    <iframe src="images/sean_huang_resume.pdf#zoom=90" class="resume-frame" title="Sean Huang Resume"></iframe>
+  </section>
+
+  <script src="scripts.js"></script>
 </body>
 
 </html>

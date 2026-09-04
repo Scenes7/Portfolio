@@ -1,34 +1,18 @@
-window.location.replace('#about');
-inviteButton = document.getElementById('dealerInvite')
-githubLogo = document.getElementById('logo1')
-linkedinLogo = document.getElementById('logo2')
-emailLogo = document.getElementById('logo3')
-githubName = document.getElementById('logoDescription1')
-linkedinName = document.getElementById('logoDescription2')
-emailName = document.getElementById('logoDescription3')
+const homeBtn = document.getElementById('home-btn');
+const resumeBtn = document.getElementById('resume-btn');
+const homeView = document.getElementById('home-view');
+const resumeView = document.getElementById('resume-view');
 
-// inviteButton.addEventListener('click', () => {
-//     window.open("https://discord.com/oauth2/authorize?client_id=866733937115922443&permissions=0&scope=bot", "_blank")
-// })
+homeBtn.addEventListener('click', () => {
+  homeBtn.classList.add('active');
+  resumeBtn.classList.remove('active');
+  homeView.classList.remove('hidden');
+  resumeView.classList.add('hidden');
+});
 
-githubLogo.addEventListener('mouseover', () => {
-    githubName.classList.add("showElement")
-})
-githubLogo.addEventListener('mouseout', () => {
-    githubName.classList.remove("showElement")
-})
-
-linkedinLogo.addEventListener('mouseover', () => {
-    linkedinName.classList.add("showElement")
-})
-linkedinLogo.addEventListener('mouseout', () => {
-    linkedinName.classList.remove("showElement")
-})
-
-emailLogo.addEventListener('mouseover', () => {
-    emailName.classList.add("showElement")
-})
-emailLogo.addEventListener('mouseout', () => {
-    emailName.classList.remove("showElement")
-})
-
+resumeBtn.addEventListener('click', () => {
+  resumeBtn.classList.add('active');
+  homeBtn.classList.remove('active');
+  resumeView.classList.remove('hidden');
+  homeView.classList.add('hidden');
+});

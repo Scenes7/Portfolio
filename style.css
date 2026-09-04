@@ -1,148 +1,148 @@
-html {
-    scroll-behavior: smooth;
+:root {
+  /* pico 8 */
+  --pico-black: #000000;
+  --pico-dark-blue: #1d2b53;
+  --pico-dark-gray: #5f574f;
+  --pico-light-gray: #c2c3c7;
+  --pico-bg: #fff1e8;
+  --pico-indigo: #83769c;
+
+  --space-buttons-gap: 80px;
+  --space-buttons-to-image: 60px;
+  --space-image-to-bio: 40px;
+  --space-bio-to-logos: 50px;
+  --space-logos-gap: 60px;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: whitesmoke;
+  background-color: var(--pico-bg);
+  font-family: 'Roboto Mono', monospace;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--pico-black);
 }
 
-#navBar {
-    background-color: rgb(240, 228, 216);
-    display: flex;
-    justify-content: right;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    height: 50px;
-    position: sticky;
-    top: 0%;
+.header {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-buttons-gap);
+  padding-top: 32px;
+  padding-bottom: var(--space-buttons-to-image);
+  width: 100%;
 }
 
-.navLink {
-    margin-left: 5%;
-    margin-right: 4%;
-    text-decoration: none;
-    margin-top: 1%;
-    color: black;
+.nav-btn {
+  background: transparent;
+  border: none;
+  color: var(--pico-indigo);
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding: 8px 20px;
+  cursor: pointer;
+}
+
+.nav-btn:hover {
+  color: var(--pico-dark-blue);
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+  max-width: 800px;
+  padding: 0 20px 40px;
+}
+
+.profile-img {
+  width: 40%;
+  max-width: 420px;
+  height: auto;
+  border-radius: 16px;
+  border: 2px solid var(--pico-light-gray);
+  object-fit: cover;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  margin-bottom: var(--space-image-to-bio);
 }
 
 .bio {
-    background-color: aquamarine;
-    display: flex;
-    flex-direction: row;
+  text-align: center;
+  margin-bottom: var(--space-bio-to-logos);
 }
 
-#about {
-    background-color: rgb(246, 240, 241);
-    padding: 5%;
-    font-size: large;
+.line-1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--pico-black);
+  margin-bottom: 8px;
 }
 
-#pic {
-    padding: 2%;
-    background-color: wheat;
-    width: 100%;
-    border-radius: 5%;
-    
+.highlight {
+  background-color: var(--pico-indigo);
+  color: var(--pico-black);
+  padding: 2px 8px;
+  border-radius: 4px;
 }
 
-#myself {
-    font-size: 50%;
-    height: 100%;
-    width: 400px;
-    height:400px;
-    line-height: 100%; 
-    border-radius: 3%;
+.line-2 {
+  font-size: 1.05rem;
+  color: var(--pico-dark-gray);
+  font-weight: 400;
 }
 
-.projects {
-    background-color: rgb(246, 245, 240);
-    padding-top: 5%;
-    padding-bottom: 5%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex: 1 1 auto;
+.social-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-logos-gap);
+  width: 100%;
 }
 
-.project {
-    height: 500px;
-    width: 400px;
-    background-color: rgb(240, 228, 216);
-    margin-left: 1%;
-    margin-right: 1%;
-    margin-top: 5%;
-    border-style: solid;
-    border-width: 10px;
-    border-radius: 5px;
-    border-color: wheat;
-    text-decoration: none;
-    text-wrap: wrap;
-    color: black;
-    text-align: center;
-    font-size: large;
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
 
-.project:hover {
-    border-color: black;
-    transition-duration: 600ms;
+.social-icon {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  filter: url(#recolor-pico13);
 }
 
-.projectPic {
-    width: 400px;
-    height: 200px;
-    text-decoration: none;
-    padding-bottom: 30px;
-    
+.social-link:hover .social-icon {
+  filter: url(#recolor-pico13) brightness(0.65);
 }
 
-#dealerInvite {
-    margin-top: 30px;
-    padding: 10px;
-    border-style: solid;
-    border-radius: 10px;
-    border-width: 0px;
-    background-color: lightcoral;
-    font-family: 'Tahoma'
+.resume-container {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 0 20px 20px;
 }
 
-#dealerInvite:hover {
-    background-color: white;
-    transition-duration: 300ms;
+.resume-frame {
+  width: 100%;
+  max-width: 1100px;
+  height: calc(100vh - 130px);
+  border: 2px solid var(--pico-light-gray);
+  border-radius: 12px;
+  background-color: #ffffff;
 }
 
-.handles {
-    background-color: rgb(246, 240, 241);
-    padding-top: 2%;
-    display: flex;
-    padding-bottom: 3%;
-}
-
-.handle {
-    text-decoration: none;
-    margin-bottom: 5%;
-    align-items: center;
-
-}
-
-.logo {
-    height: 100px;
-    width: 100px;
-    margin-left: 80px;    
-    margin-right: 70px;    
-}
-
-.logoDescription {
-    opacity: 0;
-    color: 	rgb(0, 150, 255);
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.showElement {
-    visibility: visible;
-    transition: 300ms;
-    transition: opacity 0.3s ease;
-    opacity: 1;
+.hidden {
+  display: none !important;
 }
